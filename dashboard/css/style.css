@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    background-color: #0d1323;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+section {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px auto;
+}
+
+.blockSettings {
+    width: 23%; 
+    margin-bottom: 30px;   
+}
+
+.blockSettings .cardPrimary {
+    border-radius: 12px;
+    background: #5746ea;
+    padding: 22px 15px;
+}
+
+.blockSettings .imageUser {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid white;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.blockSettings .imageUser img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.dataUser p{
+    color: #8980f8;
+    font-size: 15px;
+}
+
+.dataUser h1 {
+    color: #d7cffc; 
+    font-size: 35px;
+    font-weight: normal;
+    padding-bottom: 40px;
+    margin-right: 35px;
+}
+
+.cardSecundary {
+    /* position: relative;
+    z-index: -1; */
+    background-color: #1d204b;
+    border-radius: 0 0 12px 12px; 
+    padding: 20px 0 5px 0;
+    margin-top: -10px;
+}
+
+.cardSecundary div {
+    /* z-index: 1000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 15px;   
+}
+
+.cardSecundary button {
+    background-color: #1d204b;
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 2px 0;
+    color: #464a82;
+}
+
+button:hover {
+    color: #d7cffc;
+}
+
+.blockInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75.5%;
+}
+
+/* .blockInfo div:nth-child() {
+    margin-bottom: 20px;
+} */
+
+.teste {
+    margin-bottom: 17px;
+}
+
+.blockInfo .work, .play, .study, .exercise, .social, .self {
+    width: 32%;
+    background-color: #1d204b;
+    border-radius: 12px;
+}
+
+.blockInfo .miniCard {
+    position: relative;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+#work {
+    background-color: #ff8b64;
+}
+
+#play {
+    background-color: #57c2e6;
+}
+
+#study {
+    background-color: #ff5e7d;
+}
+
+#exercise {
+    background-color: #4bcf81;
+}
+
+#social {
+    background-color: #7234d2;
+}
+
+#self {
+    background-color: #f1c75b;
+}
+
+.miniCard img{
+    margin-left: 150px;    
+}
+
+.maxCard {
+    margin: 15px;
+}
+
+.miniTwo .miniName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cbcee0;
+    margin-bottom: 15px;
+}
+
+.miniName h3{
+   font-size: 15px;
+}
+
+.miniName span{
+    cursor: pointer;
+}
+
+.miniInfo {
+    color: #bec2d1;
+}
+
+.miniInfo h2 {
+    font-size: 40px;
+    font-weight: normal;    
+}
+
+.miniInfo p {
+    font-size: 12px;
+    color: #8980f8;
+}
+
+@media screen and (max-width: 416px) {
+
+    section {
+        width: 80%;
+        flex-direction: column;
+        margin: 80px auto;
+    }
+    
+    .blockSettings {
+        width: 100%; 
+    }
+
+    .blockSettings .cardPrimary {
+        padding: 28px 20px;
+    }
+    
+    .blockSettings .imageUser {
+        margin-bottom: 0px;
+    }
+
+    .cardContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .dataUser p{
+        font-size: 20px;
+    }
+
+    .dataUser h1 {
+        font-size: 30px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    .cardSecundary { 
+        padding: 20px 15px;
+        margin-top: -10px;
+    }
+
+    .cardSecundary div {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px;  
+    }
+
+    .cardSecundary button {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .blockInfo {
+        flex-direction: column;
+        width: 100%;
+    }
+    .blockInfo .work, .play, .study, .exercise, .social, .self {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .miniCard img{
+        margin-left: 230px;    
+    }
+    
+    .maxCard {
+        margin: 20px;
+    }
+
+    .miniTwo .miniName{
+        margin-bottom: 15px;
+    }
+
+    .miniTwo .miniName h3{
+        font-size: 18px;
+    }
+
+    .miniTwo .miniInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .miniInfo h2{
+         font-size: 35px;
+    }
+
+    .miniInfo p{
+        font-size: 15px;
+    }
+}
